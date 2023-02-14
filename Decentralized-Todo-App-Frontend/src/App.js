@@ -19,7 +19,7 @@ function App() {
     try {
       const { ethereum } = window;
       if (!ethereum) {
-        console.log("Metamask Not Detected");
+        console.log("Metamask is Not Detected");
       }
       let chainid = await ethereum.request({ method: "eth_chainId" });
       let RinkebyChainId = '0x4';
